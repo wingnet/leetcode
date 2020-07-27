@@ -1,6 +1,5 @@
 package TopInterviewQuestions.HeapStackQueue;
 
-import java.util.LinkedList;
 import java.util.PriorityQueue;
 
 public class MedianFinder {
@@ -11,7 +10,7 @@ public class MedianFinder {
     public MedianFinder() {
 
     }
-    LinkedList<Integer> buf=new LinkedList<>();
+
     public void addNum(int num) {
         count++;
         int num1st=(count+1)/2;
