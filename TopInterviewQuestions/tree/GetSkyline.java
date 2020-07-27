@@ -32,7 +32,6 @@ public class GetSkyline {
                 else {
                     LinkedList<List<Integer>> tmpList=new LinkedList<>();
 
-                    int crossStart=Integer.MAX_VALUE;
                     for(int i=0;i<skylines.size()-1;i++){
                         int lineX=skylines.get(i).get(0);
                         int nextX=skylines.get(i+1).get(0);

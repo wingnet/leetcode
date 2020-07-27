@@ -1,7 +1,5 @@
 package TopInterviewQuestions.string;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Whole {
     public boolean isPalindrome(String s) {
