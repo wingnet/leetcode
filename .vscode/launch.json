@@ -1,0 +1,91 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxPoints1",
+            "request": "launch",
+            "mainClass": "TopInterviewQuestions.aboutMath.MaxPoints1",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test<leetcode_7d3c9599>",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test<leetcode_7d3c9599>(1)",
+            "request": "launch",
+            "mainClass": "TopInterviewQuestions.Test",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CoinChange<leetcode_7d3c9599>",
+            "request": "launch",
+            "mainClass": "TopInterviewQuestions.dp.CoinChange",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LongestIncreasingPath<leetcode_7d3c9599>",
+            "request": "launch",
+            "mainClass": "TopInterviewQuestions.dp.LongestIncreasingPath",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LongestSubstring<leetcode_7d3c9599>",
+            "request": "launch",
+            "mainClass": "TopInterviewQuestions.dp.LongestSubstring",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SuperEggDrop<leetcode_7d3c9599>",
+            "request": "launch",
+            "mainClass": "TopInterviewQuestions.preStart.SuperEggDrop",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Whole<leetcode_7d3c9599>",
+            "request": "launch",
+            "mainClass": "TopInterviewQuestions.string.Whole",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WordBreak1<leetcode_7d3c9599>",
+            "request": "launch",
+            "mainClass": "TopInterviewQuestions.string.WordBreak1",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WordBreakII1<leetcode_7d3c9599>",
+            "request": "launch",
+            "mainClass": "TopInterviewQuestions.string.WordBreakII1",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WordBreakII2<leetcode_7d3c9599>",
+            "request": "launch",
+            "mainClass": "TopInterviewQuestions.string.WordBreakII2",
+            "projectName": "leetcode_7d3c9599"
+        }
+    ]
+}
