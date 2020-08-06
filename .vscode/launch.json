@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "TopInterviewQuestions.Test",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MaxPoints",
             "request": "launch",
             "mainClass": "TopInterviewQuestions.aboutMath.MaxPoints",
