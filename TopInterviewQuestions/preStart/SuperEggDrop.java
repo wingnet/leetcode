@@ -3,6 +3,23 @@ package TopInterviewQuestions.preStart;
 public class SuperEggDrop {
     int[][] history;
 
+    static class Result{
+        int fail;
+        int success;
+        Result(int fail,int success){
+            this.fail=fail;
+            this.success=success;
+        }
+
+        int getDiff(){
+            return fail-success;
+        }
+
+        int getMax(){
+            return Math.max(fail, success);
+        }
+    }
+
     public int superEggDrop(int K, int N) {
         history=new int[K+1][N+1];
 
@@ -44,6 +61,13 @@ public class SuperEggDrop {
         return history[k][n];
     }
 
+    Result test(int k,int n,int testFloor){
+        int failResult=find(k-1,testFloor-1);
+        int sucResult=find(k,n-testFloor);
+
+        return new Result(failResult,sucResult);
+    }
+
     int find(int k,int n){
         System.out.println("k:"+k+" n:"+n);
         if(n==0)return 0;
@@ -57,34 +81,35 @@ public class SuperEggDrop {
 
         int floor=1;
         int ceiling=n;
-        int diff=0;
-        int failResult=0;
-        int sucResult=0;
         while(floor<ceiling){
             int mid=floor+(ceiling-floor)/2;
 
-            failResult=find(k-1,mid-1);
+            Result result=test(k, n, mid);
 
-            sucResult=find(k,n-mid);
-            diff=failResult-sucResult;
-            if(diff<0)floor=mid+1;
+            if(result.getDiff()==0){
+                history[k][n]=result.success+1;
+                return history[k][n];
+            }
+            if(result.getDiff()<0)floor=mid+1;
             else ceiling=mid;
+            
         }
 
-        int next=floor-1;
-        int fail2=find(k-1,next-1);
-        int success2=find(k,n-next);
-        int diff2=success2-fail2;
-        int result=failResult;
-        if(diff2<diff){
-            result=success2;
+        Result result0=test(k,n,floor);
+        if(result0.getDiff()==0){
+            history[k][n]=result0.success+1;
+            return history[k][n];
         }
-        history[k][n]=result;
-        return result;
+
+        Result result1=test(k,n,floor-1);
+        
+        history[k][n]=Math.min(result0.getMax(),result1.getMax())+1;
+        return history[k][n];
     }
 
     public static void main(String[] args){
         SuperEggDrop solution=new SuperEggDrop();
-        System.out.println(solution.superEggDrop(2, 6));
+        //System.out.println(solution.superEggDrop(2, 6));
+        System.out.println(solution.superEggDrop(2, 14));
     }
 }
