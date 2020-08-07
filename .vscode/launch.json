@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SuperEggDrop",
+            "request": "launch",
+            "mainClass": "TopInterviewQuestions.preStart.SuperEggDrop",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Test",
             "request": "launch",
             "mainClass": "TopInterviewQuestions.Test",
