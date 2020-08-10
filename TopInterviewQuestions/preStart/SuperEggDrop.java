@@ -71,8 +71,7 @@ public class SuperEggDrop {
     int find(int k,int n){
         System.out.println("k:"+k+" n:"+n);
         if(n==0)return 0;
-        
-        if(k<=0)return -1;
+
         if(k==1)return n;
 
         if(n==1)return 1;
@@ -96,10 +95,6 @@ public class SuperEggDrop {
         }
 
         Result result0=test(k,n,floor);
-        if(result0.getDiff()==0){
-            history[k][n]=result0.success+1;
-            return history[k][n];
-        }
 
         Result result1=test(k,n,floor-1);
         
