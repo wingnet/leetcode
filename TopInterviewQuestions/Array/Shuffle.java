@@ -17,13 +17,12 @@ public class Shuffle {
     /** Returns a random shuffling of the array. */
     public int[] shuffle() {
         int[] result=nums.clone();
-        int indexRandom=result.length-1;
-        for(int i=0;i<nums.length;i++){
-            int index=rand.nextInt(indexRandom+1);
+
+        for(int i=result.length-1;i>=0;i--){
+            int index=rand.nextInt(i+1);
             int tmp=result[index];
-            result[index]=result[indexRandom];
-            result[indexRandom]=tmp;
-            indexRandom--;
+            result[index]=result[i];
+            result[i]=tmp;
         }
         return result;
     }
