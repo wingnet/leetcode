@@ -40,6 +40,7 @@ public class Test {
         map.put(1.5,15);
         map.put(2.0,20);
         map.put(2.5,25);
+        
         SortedMap<Double,Integer> tmp= map.subMap(1.1, 2.1);
         //SortedMap<Double,Integer> tmp=map.
         for(Entry<Double,Integer> entry:tmp.entrySet()){
