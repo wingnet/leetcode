@@ -56,6 +56,7 @@ public class Test {
         // System.out.println(test.binarySearchNearestLarge(nums, 4));
         // System.out.println(test.binarySearchNearestLarge(nums, 5));
 
-        test.testTreemap();
+        //test.testTreemap();
+        System.out.println(4&3);
     }
 }
