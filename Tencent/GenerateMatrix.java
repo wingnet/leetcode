@@ -1,4 +1,4 @@
-package Temp;
+package Tencent;
 
 public class GenerateMatrix {
     public int[][] generateMatrix(int n) {

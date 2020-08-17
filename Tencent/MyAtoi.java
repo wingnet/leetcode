@@ -1,4 +1,4 @@
-package Temp;
+package Tencent;
 
 public class MyAtoi {
     public int myAtoi(String str) {

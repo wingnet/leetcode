@@ -1,4 +1,4 @@
-package Temp;
+package Tencent;
 
 public class IsPalindrome {
     public boolean isPalindrome(int x) {

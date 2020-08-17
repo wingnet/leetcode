@@ -1,4 +1,4 @@
-package Temp;
+package Tencent;
 
 public class Reverse {
     public int reverse(int x) {
@@ -10,7 +10,7 @@ public class Reverse {
             tmp=tmp*10+digit;
             x=x/10;
         }
-        return 0;
+        return tmp;
     }
 
     public static void main(String[] args) {
