@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Reverse",
+            "request": "launch",
+            "mainClass": "Temp.Reverse",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GenerateMatrix",
+            "request": "launch",
+            "mainClass": "Temp.GenerateMatrix",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MyAtoi",
+            "request": "launch",
+            "mainClass": "Temp.MyAtoi",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Test",
             "request": "launch",
             "mainClass": "TopInterviewQuestions.sortSearch.Test",
