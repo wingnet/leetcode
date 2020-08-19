@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - IsInterleave",
+            "request": "launch",
+            "mainClass": "Teambition.IsInterleave",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FindMedianSortedArrays",
             "request": "launch",
             "mainClass": "Tencent.FindMedianSortedArrays",
