@@ -1,4 +1,4 @@
-package Teambition;
+package Teambition.DataStruct;
 
 public class IsInterleave {
     String s1;

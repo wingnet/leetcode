@@ -1,4 +1,4 @@
-package Teambition;
+package Teambition.DataStruct;
 
 import java.util.ArrayList;
 import java.util.List;

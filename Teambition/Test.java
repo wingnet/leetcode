@@ -1,5 +1,5 @@
 package Teambition;
 
-public class FullJustify {
+public class Test {
     
 }

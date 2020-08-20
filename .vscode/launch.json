@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - OrderlyQueue",
+            "request": "launch",
+            "mainClass": "Teambition.DataStruct.OrderlyQueue",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CompareVersion",
+            "request": "launch",
+            "mainClass": "Teambition.DataStruct.CompareVersion",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - IsInterleave",
             "request": "launch",
             "mainClass": "Teambition.IsInterleave",
