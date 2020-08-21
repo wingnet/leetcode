@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FindRotateSteps",
+            "request": "launch",
+            "mainClass": "Teambition.Algor.FindRotateSteps",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - OrderlyQueue",
             "request": "launch",
             "mainClass": "Teambition.DataStruct.OrderlyQueue",

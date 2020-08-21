@@ -1,32 +1,14 @@
 package Teambition.DataStruct;
 
-import java.util.Arrays;
-import java.util.PriorityQueue;
-
 public class SumSubarrayMins {
-    static class valueIdx{
-        int value;
-        int idx;
-        valueIdx(int v,int i){
-            value=v;
-            idx=i;
-        }
-    }
+    
     long sum=0;
     int[] A;
     int model=1000000007;
-    PriorityQueue<valueIdx> pq=new PriorityQueue<valueIdx>((valueIdx x,valueIdx y)->{
-        return x.value-y.value;
-    });
+
     public int sumSubarrayMins(int[] A) {
         this.A=A;
         
-        // for (int i = 0; i < A.length; i++) {
-        //     pq.add(new valueIdx(A[i], i));
-        // }
-        // while(pq.isEmpty()==false){
-
-        // }
         split(0,A.length-1);
         return (int)sum;
     }
