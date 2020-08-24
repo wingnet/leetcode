@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SplitArray",
+            "request": "launch",
+            "mainClass": "Teambition.Algor.SplitArray",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RemoveBoxes1",
+            "request": "launch",
+            "mainClass": "Teambition.Algor.RemoveBoxes1",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RemoveBoxes",
+            "request": "launch",
+            "mainClass": "Teambition.Algor.RemoveBoxes",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FindRotateSteps",
             "request": "launch",
             "mainClass": "Teambition.Algor.FindRotateSteps",
