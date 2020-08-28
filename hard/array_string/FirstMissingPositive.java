@@ -5,6 +5,7 @@ public class FirstMissingPositive {
     public int firstMissingPositive(int[] nums) {
         this.nums=nums;
 
+        return 0;
     }
 
     int[] quickSelect(){

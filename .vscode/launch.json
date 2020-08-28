@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - IsMatch",
+            "request": "launch",
+            "mainClass": "hard.backtracking.IsMatch",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RemoveInvalidParentheses1",
+            "request": "launch",
+            "mainClass": "hard.tree_graph.RemoveInvalidParentheses1",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RemoveInvalidParentheses",
+            "request": "launch",
+            "mainClass": "hard.tree_graph.RemoveInvalidParentheses",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MinWindow",
+            "request": "launch",
+            "mainClass": "hard.array_string.MinWindow",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SplitArray1",
             "request": "launch",
             "mainClass": "Teambition.Algor.SplitArray1",
