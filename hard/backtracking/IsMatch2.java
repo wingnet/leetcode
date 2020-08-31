@@ -2,8 +2,9 @@ package hard.backtracking;
 
 //https://leetcode-cn.com/problems/regular-expression-matching/
 //正则表达式匹配
-//最优解 2ms
-public class IsMatch1 {
+//18ms
+//main中是对IsMatch1和IsMatch2进行对比测试的代码
+public class IsMatch2 {
     String s;
     String p;
     int[][] history;
@@ -21,11 +22,12 @@ public class IsMatch1 {
         if(posS==s.length()&&posP==p.length())return true;
         if(posP==p.length())return false;
 
-        String output="--";
+        String output="";
         if(history[posS][posP]!=0){
             output="  hit";
         }
         System.out.println(output);
+        
         if(history[posS][posP]!=0)return history[posS][posP]==1;
 
         if(posS==s.length()){
@@ -47,17 +49,32 @@ public class IsMatch1 {
 
         if(posP+1<p.length() && p.charAt(posP+1)=='*'){
             char ch=p.charAt(posP);
+            
+            if(dfs(posS,posP+2)){
+                history[posS][posP]=1;
+                return true;
+            }
 
-            if(ch=='.'||s.charAt(posS)==ch){
-                boolean tmp=dfs(posS,posP+2) || dfs(posS+1,posP);
-                history[posS][posP]=tmp?1:-1;
-                return tmp;
+            if(ch=='.'){
+                while(posS<s.length()){
+                    if(dfs(posS+1,posP+2)){
+                        history[posS][posP]=1;
+                        return true;
+                    }
+                    posS++;
+                }
             }
             else{
-                boolean tmp=dfs(posS,posP+2);
-                history[posS][posP]=tmp?1:-1;
-                return tmp;
+                while(posS<s.length()&&s.charAt(posS)==ch){
+                    if(dfs(posS+1,posP+2)){
+                        history[posS][posP]=1;
+                        return true;
+                    }
+                    posS++;
+                }
             }
+            history[posS][posP]=-1;
+            return false;
         }
         else if(p.charAt(posP)=='.'){
             return dfs(posS+1,posP+1);
@@ -74,11 +91,18 @@ public class IsMatch1 {
     }
 
     public static void main(String[] args) {
-        IsMatch1 solution=new IsMatch1();
-        // String s="aab";
-        // String p="c*a*b";
-        String s="a";
-        String p="ab*";
-        System.out.println(solution.isMatch(s, p));
+        IsMatch2 solution2=new IsMatch2();
+        IsMatch1 solution1=new IsMatch1();
+
+        String s="aaabcd";
+        String p=".*abcd";
+
+        System.out.println(s);
+        System.out.println(p);
+        System.out.println("--------IsMatch1---------");
+        System.out.println(solution1.isMatch(s, p));
+        System.out.println("");
+        System.out.println("--------IsMatch2---------");
+        System.out.println(solution2.isMatch(s, p));
     }
 }
