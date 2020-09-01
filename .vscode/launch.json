@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - NumOfWays1",
+            "request": "launch",
+            "mainClass": "week204.NumOfWays1",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NumOfWays",
+            "request": "launch",
+            "mainClass": "week204.NumOfWays",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - NumOfWays",
             "request": "launch",
             "mainClass": "week204.NumOfWays",
