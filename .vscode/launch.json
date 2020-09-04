@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FindLatestStep",
+            "request": "launch",
+            "mainClass": "week203.FindLatestStep",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxCoins",
+            "request": "launch",
+            "mainClass": "week203.MaxCoins",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MostVisited",
+            "request": "launch",
+            "mainClass": "week203.MostVisited",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxCoins",
+            "request": "launch",
+            "mainClass": "hard.DP.MaxCoins",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LargestRectangleArea",
             "request": "launch",
             "mainClass": "hard.other.LargestRectangleArea",
