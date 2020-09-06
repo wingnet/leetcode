@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem3",
+            "request": "launch",
+            "mainClass": "contest.week205.Problem3",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem2",
+            "request": "launch",
+            "mainClass": "contest.week205.Problem2",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Problem1",
+            "request": "launch",
+            "mainClass": "contest.week205.Problem1",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StoneGameV1",
+            "request": "launch",
+            "mainClass": "week203.StoneGameV1",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StoneGameV",
+            "request": "launch",
+            "mainClass": "week203.StoneGameV",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FindLatestStep",
             "request": "launch",
             "mainClass": "week203.FindLatestStep",

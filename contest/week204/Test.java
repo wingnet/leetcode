@@ -1,4 +1,4 @@
-package week204;
+package contest.week204;
 
 public class Test {
 

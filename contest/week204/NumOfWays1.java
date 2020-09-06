@@ -1,4 +1,4 @@
-package week204;
+package contest.week204;
 
 public class NumOfWays1 {
     int model=1000000000+7;
