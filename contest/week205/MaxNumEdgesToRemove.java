@@ -2,46 +2,43 @@ package contest.week205;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 
-public class Problem4 {
+public class MaxNumEdgesToRemove {
     int n;
     int[][] edges;
-    int[][] buf;
-    List<Integer> history;
+
+    LinkedList<Integer> history;
     public int maxNumEdgesToRemove(int n, int[][] edges) {
         this.n=n;
         this.edges=edges;
 
-        buf=new int[n][3];
-        for(int i=0;i<edges.length;i++){
-            int[] tmp=edges[i];
-            int type=tmp[0];
-            int node1=tmp[1];
-            int node2=tmp[2];
-            buf[node1-1][type-1]=node2-1;
-            buf[node2-1][type-1]=node1-1;
-        }
+        history=new LinkedList<>();
+        return dfs(1,0);
     }
 
     int dfs(int node,int edgeCount){
+        if(history.size()==n)return edgeCount;
+
         int localMin=Integer.MAX_VALUE;
         HashMap<Integer,boolean[]> adjs=getAdjs(node);
         for(int key:adjs.keySet()){
-            if(history.contains(key))continue;
+            //if(history.contains(key))continue;
 
             boolean[] types=adjs.get(key);
             if(types[2]){
-                history.add(node);
+                history.addLast(node);
                 localMin=Math.min(localMin,dfs(key,edgeCount+1));
-                history.remove(node);
+                history.removeLast();
             }
             else if(types[0]&&types[1]){
-                history.add(node);
+                history.addLast(node);
                 localMin=Math.min(localMin,dfs(key,edgeCount+2));
-                history.remove(node);
+                history.removeLast();
             }
         }
+        System.out.println(""+node+","+edgeCount+","+localMin);
         return localMin;
     }
 
@@ -59,9 +56,9 @@ public class Problem4 {
                 other=is[1];
             }
 
-            if(type>0){
+            if(type>0&&history.contains(other)==false){
                 boolean[] tmp;
-                if(result.containsKey(other)){
+                if(result.containsKey(other)==false){
                     tmp=new boolean[3];
                     result.put(other, tmp);
                 }
@@ -74,4 +71,10 @@ public class Problem4 {
         return result;
     }
 
+    public static void main(String[] args) {
+        MaxNumEdgesToRemove solution=new MaxNumEdgesToRemove();
+        int n=4;
+        int[][] edges=new int[][]{{3,1,2},{3,2,3},{1,1,3},{1,2,4},{1,1,2},{2,3,4}};
+        System.out.println(solution.maxNumEdgesToRemove(n, edges));
+    }
 }

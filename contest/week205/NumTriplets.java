@@ -3,7 +3,7 @@ package contest.week205;
 import java.util.Arrays;
 
 
-public class Problem2 {
+public class NumTriplets {
     public int numTriplets(int[] nums1, int[] nums2) {
 
         Arrays.sort(nums1);
@@ -48,7 +48,7 @@ public class Problem2 {
     }
     public static void main(String[] args) {
         System.out.println(Integer.MAX_VALUE);
-        Problem2 solution=new Problem2();
+        NumTriplets solution=new NumTriplets();
         int[] nums1={7,4};
         int[] nums2={5,2,8,9};
         //  System.out.println(solution.numTriplets(nums1, nums2));

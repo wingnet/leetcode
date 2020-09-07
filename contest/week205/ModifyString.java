@@ -1,6 +1,6 @@
 package contest.week205;
 
-public class Problem1 {
+public class ModifyString {
     public String modifyString(String s) {
         char[] chars=s.toCharArray();
         for(int i=0;i<chars.length;){
@@ -30,7 +30,7 @@ public class Problem1 {
         return new String(chars);
     }
     public static void main(String[] args) {
-        Problem1 solution=new Problem1();
+        ModifyString solution=new ModifyString();
         String s="?zs";
         System.out.println(solution.modifyString(s));
         s="ubv?w";

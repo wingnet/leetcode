@@ -2,7 +2,7 @@ package contest.week205;
 
 import java.util.PriorityQueue;
 
-public class Problem3 {
+public class MinCost {
     public int minCost(String s, int[] cost) {
 
         int totalCost=0;
@@ -27,7 +27,7 @@ public class Problem3 {
         return totalCost;
     }
     public static void main(String[] args) {
-        Problem3 solution=new Problem3();
+        MinCost solution=new MinCost();
         String s="abaac";
         int[] cost=new int[]{1,2,3,4,5};
         System.out.println(solution.minCost(s, cost));
