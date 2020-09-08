@@ -3,6 +3,7 @@ package contest.week205;
 import java.util.Arrays;
 import java.util.LinkedList;
 
+//fail
 public class MaxNumEdgesToRemove2 {
     int n;
     int[][] edges;

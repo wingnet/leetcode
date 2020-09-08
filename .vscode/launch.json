@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MaxNumEdgesToRemove3",
+            "request": "launch",
+            "mainClass": "contest.week205.MaxNumEdgesToRemove3",
+            "projectName": "leetcode_7d3c9599"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MaxNumEdgesToRemove1",
             "request": "launch",
             "mainClass": "contest.week205.MaxNumEdgesToRemove1",
