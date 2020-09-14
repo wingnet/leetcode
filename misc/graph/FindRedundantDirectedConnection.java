@@ -37,29 +37,38 @@ public class FindRedundantDirectedConnection {
         }
     }
     public int[] findRedundantDirectedConnection(int[][] edges) {
-        boolean[] flag=new boolean[edges.length];
+        int N=edges.length;
+        int[] inwardCount=new int[N];
+        int nodeWith2=-1;
         for(int[] edge:edges){
-            flag[edge[1]-1]=true;
-        }
-
-        int root=0;
-        for(int i=0;i<flag.length;i++){
-
-            if(flag[i]==false){
-                root=i+1;
+            inwardCount[edge[1]-1]+=1;
+            if(inwardCount[edge[1]-1]==2){
+                nodeWith2=edge[1];
                 break;
             }
         }
 
-        UnionFind uf=new UnionFind(edges.length);
+
+        int[] edge1=null;
+        int[] edge2=null;
+        UnionFind uf=new UnionFind(N);
         for(int[] edge:edges){
-            if(edge[0]==root-1)uf.union(root-1, edge[1]-1);
+            if(edge[1]!=nodeWith2){
+                if(uf.union(edge[0]-1, edge[1]-1)==false){
+                    return edge;
+                }
+            }
+            else{
+                if(edge1==null)edge1=edge;
+                else edge2=edge;
+            }
         }
 
-        
-        for(int[] edge:edges){
-            if(uf.union(edge[0]-1, edge[1]-1)==false)return edge;
+        if(nodeWith2>0){
+            if(uf.union(edge1[0]-1, edge1[1]-1)==false)return edge1;
+            else return edge2;
         }
+
         return null;
     }
 }
