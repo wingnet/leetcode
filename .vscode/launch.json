@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestJdbc",
+            "request": "launch",
+            "mainClass": "temp.TestJdbc",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StoneGameV",
+            "request": "launch",
+            "mainClass": "contest.week203.StoneGameV",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxCoins",
+            "request": "launch",
+            "mainClass": "contest.week203.MaxCoins",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "temp.Test",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestJdbc",
+            "request": "launch",
+            "mainClass": "Temp.TestJdbc",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MaxNumEdgesToRemove3",
             "request": "launch",
             "mainClass": "contest.week205.MaxNumEdgesToRemove3",
