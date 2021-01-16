@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestJdbc",
             "request": "launch",
             "mainClass": "temp.TestJdbc",
