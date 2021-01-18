@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "leetcode_2a6fa7ca"
+        },
+        {
+            "type": "java",
             "name": "Launch HitBricks",
             "request": "launch",
             "mainClass": "OneOnOne.HitBricks",

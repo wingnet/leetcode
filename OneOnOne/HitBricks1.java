@@ -30,8 +30,9 @@ public class HitBricks1 {
                 if(inRange(row, col+1)&&grid1[row][col+1]==1){
                     uf.union(getIndex(row, col), getIndex(row, col+1));
                 }
-            }[o]
+            }
         }
+        return null;
     }
 
     boolean inRange(int row,int col){
