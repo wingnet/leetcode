@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FindDisappearedNumbers",
+            "request": "launch",
+            "mainClass": "OneOnOne.FindDisappearedNumbers",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
+            "name": "Launch HitBricks1",
+            "request": "launch",
+            "mainClass": "OneOnOne.HitBricks1",
+            "projectName": "leetcode_6c82ef91"
+        },
+        {
+            "type": "java",
             "name": "Launch HitBricks1",
             "request": "launch",
             "mainClass": "OneOnOne.HitBricks1",
